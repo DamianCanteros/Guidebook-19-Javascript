@@ -1,0 +1,45 @@
+<!--14-Crear un objeto libro que contenga las siguientes propiedades: ISBN, Título, Autor,
+Número de páginas. Crear un método para cargar un libro pidiendo los datos al usuario
+y luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
+numero de páginas.--> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>    
+
+            function libro(ISBN,titulo,autor,paginas){ 
+            this.ISBN = ISBN; 
+            this.titulo = titulo; 
+            this.autor = autor;
+            this.paginas = paginas; 
+            this.mostrarLibro = mostrarLibro;  } 
+
+            function mostrarLibro() { 
+                var resultado = 
+                    `ISBN: ${this.ISBN}
+                    titulo: ${this.titulo}
+                    autor: ${this.autor}
+                    paginas: ${this.paginas}`; 
+                alert(resultado); }
+
+            ISBN = prompt("ingrese el ISBN");
+            titulo = prompt("ingrese el titulo");
+            autor = prompt("ingrese el nombre del autor");
+            paginas = prompt("ingrese la cantidad de paginas");
+
+            var milibro = new libro(ISBN,titulo,autor,paginas); 
+
+            milibro.mostrarLibro(); 
+
+        </script>
+
+    </body>
+</html>

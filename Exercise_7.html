@@ -1,0 +1,31 @@
+<!--7-Escriba un programa en el cual se ingrese un valor límite positivo, y a continuación
+solicite números al usuario hasta que la suma de los números introducidos supere el
+límite inicial. --> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script> 
+
+            var limit = prompt("ingrese un valor límite positivo");
+            var sum = 0;
+
+            do{
+
+                var num = prompt("ingrese un valor");
+                sum = sum + Number(num);
+            }while(sum<=limit)
+
+            alert(sum + " es mayor que " + limit); 
+
+        </script>
+
+    </body>
+</html>

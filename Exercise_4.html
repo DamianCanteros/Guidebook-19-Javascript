@@ -1,0 +1,25 @@
+<!--4-Realiza un programa que sólo permita introducir los caracteres ‘S’ y ‘N’. Si el usuario
+ingresa alguno de esos dos caracteres se deberá de imprimir un mensaje por pantalla
+que diga “CORRECTO”, en caso contrario, se deberá imprimir “INCORRECTO”.--> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script> 
+            var resp = prompt("ingrese su edad");
+            if(resp == "S" || resp == "N")
+                resp="CORRECTO";
+            else
+                resp="INCORRECTO";
+            alert(resp);
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!--8-Escribir un programa que lea números enteros hasta teclear 0 (cero). Al finalizar el
+programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
+todos ellos. --> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script> 
+
+            var i = 0;
+            var sum = 0;
+            var max = 0;
+            var min = 999999;
+
+            do{
+
+                var num = prompt("ingrese números enteros hasta teclear 0 (cero)");
+                i+=1;
+                sum = sum + Number(num);
+
+                if(max < Number(num)){
+                     max = Number(num);
+                }
+                if(min > Number(num) && num!="0"){
+                    min = Number(num);
+                }
+
+            }while(num!="0")
+
+            alert("el máximo número ingresado es " + max); 
+            alert("el mínimo número ingresado es " + min);
+            alert("el promedio ingresado es " + sum/i);
+        </script>
+
+    </body>
+</html>

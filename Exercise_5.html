@@ -1,0 +1,41 @@
+<!--5-Construir un programa que simule un menú de opciones para realizar las cuatro
+operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores
+numéricos enteros. El usuario, además, debe especificar la operación con el primer
+carácter de la operación que desea realizar: ‘S' o ‘s’ para la suma, ‘R’ o ‘r’ para la resta, ‘M’
+o ‘m’ para la multiplicación y ‘D’ o ‘d’ para la división. --> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script> 
+
+            var num1 = prompt("ingrese el primer valor");
+            var num2 = prompt("ingrese el segundo valor");
+            var resp = prompt("ingrese la operación a realizar: S o s para la suma, R o r para la resta, M o m para la multiplicación y D o d para la división");
+
+            switch (resp.toLowerCase()) {
+                case "s":
+                    var result = Number(num1) + Number(num2);
+                break;    
+                case "r":
+                    var result = Number(num1) - Number(num2);
+                break; 
+                case "m":
+                    var result = Number(num1) * Number(num2);
+                break;     
+                case "d":
+                    var result = Number(num1) / Number(num2); 
+                break;  
+            }   
+            alert(result); 
+        </script>
+
+    </body>
+</html>
