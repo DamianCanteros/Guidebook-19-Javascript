@@ -1,0 +1,56 @@
+<!--18-A partir del siguiente array: var valores = [true, 5, false, "hola", "adios", 2]:
+a) Determinar cual de los dos elementos de texto es mayor
+b) Utilizando exclusivamente los dos valores booleanos del array, determinar los
+operadores necesarios para obtener un resultado true y otro resultado false
+c) Determinar el resultado de las cinco operaciones matemáticas realizadas con los
+dos elementos numéricos--> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>    
+
+            var valores = [true, 5, false, "hola", "adios", 2];
+            var aux = "";
+            var num = 0;
+
+            for (let i = 0; i < 6; i++) { 
+
+                if(typeof valores[i] == "string"){
+                  
+                    if (valores[i].length>aux.length){
+                        aux = valores[i];
+                    }
+                }else if(typeof valores[i] == "boolean"){
+                  
+                  if (valores[i]){          
+                    alert(`pocision ${i} del arreglo es verdadero`);
+                  }else{
+                    alert(`pocision ${i} del arreglo es falso`);
+                  }
+                }else if(typeof valores[i] == "number"){
+                  
+                    if(num != 0){
+                        alert(`
+                        suma ${num+valores[i]} 
+                        resta ${num-valores[i]}
+                        multiplicacion ${num*valores[i]}
+                        division ${num/valores[i]}`);
+                    }
+                    num = valores[i];
+                } 
+            }
+
+            alert(`string mas largo: ${aux}`);
+
+        </script>
+
+    </body>
+</html>

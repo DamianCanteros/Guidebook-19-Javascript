@@ -15,19 +15,19 @@ resultado-->
 
             var vector1 = new Array();
 
-            var vector2 = new Array();
-
             for (let i = 0; i < 5; i++) { 
 
                 vector1[i] = Math.floor(Math.random()*(10-0+1)+0);
 
-                vector2[i] = Math.floor(Math.random()*(10-0+1)+0);
-
             }
 
-            alert(`
-            vector 1: ${vector1} 
-            vector 2: ${vector2}`)
+            alert(`vector inicial: ${vector1}`);
+
+            vector1.pop();
+
+            vector1.pop();
+
+            alert(`vector inicial: ${vector1}`);
 
         </script>
 

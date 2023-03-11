@@ -1,0 +1,43 @@
+<!--23-Resalte todas las palabras de más de 8 caracteres en el texto del párrafo (con un fondo
+amarillo, por ejemplo)--> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+    </head>
+    <body>
+ 
+        <p id="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Rerum saepe voluptate corporis quod molestias dolor quo aspernatur 
+            eveniet tempora facere amet aliquid, nostrum modi? Culpa doloremque 
+            repellat suscipit a delectus.
+        </p>
+
+        <script>    
+
+                var texto = document.getElementById("frase").textContent.split(" ");
+    
+                var texto2 = "";
+
+                for (let i = 0; i < texto.length; i++) { 
+
+                    if(texto[i].length > 7){
+
+                        var texto2 = texto2+" <mark>"+texto[i]+"</mark> ";
+
+                    }else{
+                        var texto2 = texto2+" "+texto[i]
+                    }
+                }
+
+                document.getElementById("frase").innerHTML = texto2;
+
+        </script>
+
+    </body>
+</html>

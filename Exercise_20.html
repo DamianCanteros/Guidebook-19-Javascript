@@ -1,0 +1,29 @@
+<!--20-Realizar un programa que obtenga la siguiente matriz [[3], [6], [9], [12], [15]] y devuelve y
+muestre el siguiente array [6, 9, 12, 15, 18]. --> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>    
+
+            var matriz = [[3], [6], [9], [12], [15]];
+
+            var aux = 3;
+
+            alert(`matriz: ${matriz}`);
+
+            let nuevoArray = matriz.map(matriz => Number(matriz) + aux);
+
+            alert(`matriz: ${nuevoArray}`);
+
+        </script>
+
+    </body>
+</html>
