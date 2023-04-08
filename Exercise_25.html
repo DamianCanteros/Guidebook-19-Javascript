@@ -22,11 +22,15 @@ siguiente formulario.-->
 
         <script>
 
+            var nombre ="";
+
+            var apellido ="";
+
             function getFormValores(){
                 
-                var nombre = document.getElementsByName("nombre").textContent; 
+                nombre = document.getElementsByName("nombre").textContent; 
 
-                var apellido = document.getElementsByName("apellido").textContent; 
+                apellido = document.getElementsByName("apellido").textContent; 
 
                 document.write(nombre+" "+apellido);
             }
